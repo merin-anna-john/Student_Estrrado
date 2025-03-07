@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Estrrado_Machine_Test.props" />
+</Project>

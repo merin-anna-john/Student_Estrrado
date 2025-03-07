@@ -1,0 +1,32 @@
+﻿@model Estrrado_Machine_Test.Models.Student
+
+<h2>Student Registration</h2>
+
+<form asp-action="Register" method="post">
+    <label>First Name:</label>
+    <input type="text" asp-for="FirstName" required />
+
+    <label>Last Name:</label>
+    <input type="text" asp-for="LastName" />
+
+    <label>Age:</label>
+    <input type="number" asp-for="Age" required />
+
+    <label>DOB:</label>
+    <input type="date" asp-for="DOB" required />
+
+    <label>Gender:</label>
+    <select asp-for="Gender" required>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+    </select>
+
+    <label>Email:</label>
+    <input type="email" asp-for="Email" required />
+
+    <label>Phone Number:</label>
+    <input type="tel" asp-for="PhoneNumber" required />
+
+    <button type="submit">Register</button>
+</form>
